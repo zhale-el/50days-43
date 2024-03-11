@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef9f2;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.panel-container {
+  background-color: #fff;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding: 30px;
+  max-width: 400px;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  padding: 20px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: all 0.4s;
+}
+
+.rating:hover,
+.rating.active {
+  transform: scale(1.04);
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rating img {
+  width: 40px;
+}
+
+.rating small {
+  color: #666;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
+
+.btn {
+  background-color: #fee9cd;
+  color: #666;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px 30px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
